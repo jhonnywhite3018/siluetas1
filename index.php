@@ -1,23 +1,24 @@
 <?php
 
-if(isset($_GET['silueta']))
-	$_GET['silueta']++;
-else $_GET['silueta']=1;
+if(isset($_GET['estado']))
+	$_GET['estado']++;
+else $_GET['estado']=1;
 
-if($_GET['silueta']>7)
-	$_GET['silueta']=1;
+if($_GET['estado']>7)
+	$_GET['estado']=1;
 
-$txt = '
-	<div>
-		<a href="?silueta='.$_GET['silueta'].'">
-			<img src="figs/f'.$_GET['silueta'].'.jpg" style="height:200px">
-		</a>
-	</div>		
-';
-
-echo $txt;
-echo $txt;
-echo $txt;
-echo $txt;
-
+echo mostrar();
+echo mostrar();
+echo mostrar();
+echo mostrar();
+// vista
+function mostrar(){
+	return '
+		<div>
+			<a href="?estado='.$_GET['estado'].'">
+				<img src="figs/f'.$_GET['estado'].'.jpg" style="height:200px">
+			</a>
+		</div>		
+	';
+}
 ?>
