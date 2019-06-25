@@ -9,12 +9,12 @@ if($_GET['silueta']>7)
 
 $txt = '
 	<div>
-	<a href="?silueta='.$_GET['silueta'].'">
-		<img src="figs/f'.$_GET['silueta'].'.jpg" style="height:150px">
-	</a>
-	</div>
-	
+		<a href="?silueta='.$_GET['silueta'].'">
+			<img src="figs/f'.$_GET['silueta'].'.jpg" style="height:200px">
+		</a>
+	</div>		
 ';
+
 echo $txt;
 echo $txt;
 echo $txt;
